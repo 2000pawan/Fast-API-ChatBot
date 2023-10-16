@@ -61,7 +61,7 @@ async def answer_question(request: Request):
     processed_question = process_text(user_question)
 
     # Placeholder: Provide a simple response for demonstration purposes
-    response = "I am your chatbot. You asked: {}".format(user_question)
+    response = "I am your chatbot. You asked me anything.    Answer: {}".format(processed_question)
 
     return templates.TemplateResponse(
         "index.html", {"request": request, "question": user_question, "response": response}
