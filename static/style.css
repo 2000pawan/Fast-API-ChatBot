@@ -1,0 +1,42 @@
+/* Add your CSS styling here */
+body {
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    background-color: #9dcf13;
+    font-size:x-large;
+    align-items: center;
+    font-style: normal;
+    font-weight: 100;
+    font-display:initial;
+    margin: 100px;   
+
+    
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px;
+    width: 300px;
+    font-size: large;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+button:hover {
+    background-color: #45a049;
+}

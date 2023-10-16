@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FastAPI Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/style.css') }}">
+</head>
+<body>
+    <h1>Chat Bot</h1>
+
+    <form action="/answer" method="post">
+        <label for="question">Ask a question:</label>
+        <input type="text" id="question" name="question" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if question %}
+        <h2>Your Question:</h2>
+        <p>{{ question }}</p>
+    {% endif %}
+
+    {% if response %}
+        <h2>Chatbot Response:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
