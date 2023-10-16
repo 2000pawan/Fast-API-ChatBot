@@ -10,5 +10,4 @@ python-multipart
 psycopg2-binary
 nltk
 multiport
-staticfiles
 pip
